@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Autodesk.AutoCAD.Runtime;
+﻿using Autodesk.AutoCAD.Runtime;
 using Autodesk.AutoCAD.ApplicationServices;
 using Autodesk.AutoCAD.DatabaseServices;
-[assembly: CommandClass(typeof(MyFirstProject1.Class1))]
-namespace MyFirstProject1
+[assembly: CommandClass(typeof(AutoCAD_WPF_101.Class1))]
+namespace AutoCAD_WPF_101
 {
     public class Class1
     {
         [CommandMethod("AdskGreeting")]
-        public void AdskGreeting()
+        public static void AdskGreeting()
         {
             // Get the current document and database, and start a transaction
             Document acDoc = Application.DocumentManager.MdiActiveDocument;
