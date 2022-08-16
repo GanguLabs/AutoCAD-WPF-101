@@ -1,5 +1,6 @@
 ﻿using Autodesk.AutoCAD.Runtime;
 using Autodesk.AutoCAD.ApplicationServices;
+using AcAp = Autodesk.AutoCAD.ApplicationServices.Application;
 using Autodesk.AutoCAD.DatabaseServices;
 [assembly: CommandClass(typeof(AutoCAD_WPF_101.Class1))]
 namespace AutoCAD_WPF_101
@@ -41,6 +42,14 @@ namespace AutoCAD_WPF_101
                 // Saves the changes to the database and closes the transaction
                 acTrans.Commit();
             }
+        }
+
+        [CommandMethod("OpenWPFWindow")]
+        public void CmdOpenWPFWindow()
+        {
+            var expWindow = new MainWindow();
+            var _expResult = AcAp.ShowModalWindow(expWindow);
+            
         }
     }
 }

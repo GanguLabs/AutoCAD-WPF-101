@@ -5,7 +5,9 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AutoCAD_WPF_101"
              mc:Ignorable="d" 
+             Title="AutoCAD WPF Plugin"
              d:DesignHeight="150" d:DesignWidth="300">
     <Grid>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center" Click="button_Click"/>
     </Grid>
 </Window>

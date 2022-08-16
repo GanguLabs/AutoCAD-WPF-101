@@ -25,5 +25,10 @@ namespace AutoCAD_WPF_101
             InitializeComponent();
         }
 
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            Class1.AdskGreeting();
+            this.Close(); // close the window to display the text added by the plugin in Model space
+        }
     }
 }
