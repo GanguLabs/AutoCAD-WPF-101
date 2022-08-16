@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0" AutodeskProduct="AutoCAD" Name="AutoCAD-WPF-101" Description="Plugin Description" AppVersion="0.0.1" FriendlyVersion="0.0.1" ProductType="Application" SupportedLocales="Enu" AppNameSpace="appstore.exchange.autodesk.com" Author="Anwesh Gangula" HelpFile="./help.html" OnlineDocumentation="vConstruct.com" ProductCode="{030335ce-ee6b-4cd9-84d0-0afa479ed4ac}" UpgradeCode="{08abfbe3-2dab-45aa-817b-68e70212f494}" Icon="./icon.ico">
+  <CompanyDetails Name="Anwesh Gangula" Email="myEmail@gmail.com" Url="anweshgangula.com" />
+  <Components Description="2017-2023">
+    <RuntimeRequirements OS="Win32|Win64" Platform="AutoCAD*" SeriesMin="R19.1" SeriesMax="R24.2" />
+    <ComponentEntry AppName="AutoCAD-WPF-101" Version="0.0.1" ModuleName="./Content/AutoCAD-WPF-101.dll" AppDescription="Commands Description" LoadOnCommandInvocation="True" >
+      <Commands>
+        <Command Global="OpenWPFWindow" />
+        <Command Global="AdskGreeting" />
+      </Commands>
+    </ComponentEntry>
+    <ComponentEntry AppName="AutoCAD-WPF-101" Version="0.0.1" ModuleName="./AutoCAD-WPF-101.cuix" AppDescription="Customization description" LoadOnAppearance="False" LoadOnAutoCADStartup="True" />
+  </Components>
+</ApplicationPackage>

@@ -69,5 +69,17 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="AutoCAD-WPF-101.bundle\AutoCAD-WPF-101.cuix" />
+    <None Include="AutoCAD-WPF-101.bundle\Content\ReadMe.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AutoCAD-WPF-101.bundle\PackageContents.xml" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>echo F|xcopy /s /i /e "$(ProjectDir)AutoCAD-WPF-101.bundle" "C:\ProgramData\Autodesk\ApplicationPlugins\AutoCAD-WPF-101.bundle" 
+echo F|xcopy "$(ProjectDir)bin\Debug\*" "C:\ProgramData\Autodesk\ApplicationPlugins\AutoCAD-WPF-101.bundle\Content\" /e /k /i</PostBuildEvent>
+  </PropertyGroup>
 </Project>

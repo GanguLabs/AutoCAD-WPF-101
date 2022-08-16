@@ -1,0 +1,1 @@
+This is the folder where you need to copy your build files(dll, etc...) once the bundle folder is copied to `C:\ProgramData\Autodesk\ApplicationPlugins`
